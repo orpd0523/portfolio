@@ -1,7 +1,7 @@
 import "./Body.scss"
 
 function Body() {
-  return <main className="body"></main>;
+  return <div className="body"></div>;
 }
 
 export default Body;
