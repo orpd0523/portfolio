@@ -4,7 +4,7 @@ import Body from "./components/Body/Body.js"
 function App() {
   return (
     <div className="App">
-      <Header/>WTF DO I DO??
+      <Header/>
       <Body/>
     </div>
   );
