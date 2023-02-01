@@ -1,4 +1,6 @@
 import "./Header.scss";
+import { HiMenu } from 'react-icons/fa';
+
 
 function Header() {
   return (

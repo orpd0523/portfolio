@@ -1,10 +1,13 @@
 @use "../../styles/partials/colors.scss" as *;
 
 .header{
-    background-color: $green-meeg;
+    background-color: $green;
     color: $white;
+    height: 10rem;
+    &__container{
+        margin-top: 0;
+    }
     &__item{
-        
         list-style: none;
     }
 }
