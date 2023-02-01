@@ -1,0 +1,40 @@
+@use "../../styles/partials/colors.scss" as *;
+
+.menu {
+
+  background-color: $blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  color: $white;
+  padding-top: 4rem;
+  &__item {
+    padding: .5rem;
+    margin: .5rem;
+    margin-left: 1.5rem;
+    font-size: larger;
+    a:hover{
+      color: $char-black;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    max-width: 15rem;
+
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu {
+    
+  }
+}
