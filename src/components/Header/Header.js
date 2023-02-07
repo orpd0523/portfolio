@@ -10,13 +10,19 @@ function Header() {
       {/* <MenuItems/> */}
       <div className="header__main">
         <div className="header__container">
-          <SiLinkedin className="header__icon" size={22} />
+          <a href="http://www.linkedin.com/in/operez0523-dev">
+            <SiLinkedin className="header__icon" size={22} />
+          </a>
         </div>
         <div className="header__container">
-          <SiGithub className="header__icon" size={22} />
+          <a href="https://github.com/orpd0523">
+            <SiGithub className="header__icon" size={22} />
+          </a>
         </div>
         <div className="header__container">
-          <MdEmail className="header__icon" size={22} />
+          <a href="mailto:orpd0523@gmail.com?subject=">
+            <MdEmail className="header__icon" size={22} />
+          </a>
         </div>
       </div>
     </div>
