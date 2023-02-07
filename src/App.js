@@ -1,6 +1,7 @@
 import Card from "./components/Card/Card.js";
 import Header from "./components/Header/Header.js" ;
-import Sidebar from "./components/Sidebar/Sidebar.js";
+import Main from "./components/Main/Main.js";
+// import Sidebar from "./components/Sidebar/Sidebar.js";
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       {/* <Sidebar/> */}
       <Header/>
-      <Card></Card>
+      <Main/>
     </div>
   );
 }

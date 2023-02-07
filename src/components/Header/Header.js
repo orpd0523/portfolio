@@ -1,16 +1,11 @@
 import "./Header.scss";
-import { HiMenu } from 'react-icons/fa';
-
+import MenuItems from "../MenuItems/MenuItems";
 
 function Header() {
   return (
-    <header className="header">
-      <ul className="header__container">
-        <li className="header__item">HOME</li>
-        <li className="header__item">ABOUT</li>
-        <li className="header__item">PROJECTS</li>
-      </ul>
-    </header>
+    <div className="header">
+      <MenuItems/>
+    </div>
   );
 }
 
