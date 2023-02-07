@@ -9,7 +9,6 @@
     position: relative;
     &__main{
       align-self: flex-end;
-      padding-bottom: .25rem;
     }
     &__container{
         margin-top: 0;
@@ -20,7 +19,7 @@
     &__container{
       display: inline-flex;
       flex-direction: row;
-      padding: .75rem;
+      padding: 1rem;
       
     }
     &__icon{
