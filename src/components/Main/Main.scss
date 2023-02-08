@@ -1,0 +1,14 @@
+@use "../../styles/partials/colors.scss" as *;
+
+.main {
+  &__image {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.15rem 0.15rem 0 0;
+  }
+  &__title {
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-bottom: 0.25rem;
+  }
+}

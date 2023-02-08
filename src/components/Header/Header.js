@@ -1,16 +1,31 @@
 import "./Header.scss";
-import { HiMenu } from 'react-icons/fa';
-
+// import MenuItems from "../MenuItems/MenuItems";
+import { SiLinkedin } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 
 function Header() {
   return (
-    <header className="header">
-      <ul className="header__container">
-        <li className="header__item">HOME</li>
-        <li className="header__item">ABOUT</li>
-        <li className="header__item">PROJECTS</li>
-      </ul>
-    </header>
+    <div className="header">
+      {/* <MenuItems/> */}
+      <div className="header__main">
+        <div className="header__container">
+          <a href="http://www.linkedin.com/in/operez0523-dev">
+            <SiLinkedin className="header__icon" size={22} />
+          </a>
+        </div>
+        <div className="header__container">
+          <a href="https://github.com/orpd0523">
+            <SiGithub className="header__icon" size={22} />
+          </a>
+        </div>
+        <div className="header__container">
+          <a href="mailto:orpd0523@gmail.com?subject=">
+            <MdEmail className="header__icon" size={22} />
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
 

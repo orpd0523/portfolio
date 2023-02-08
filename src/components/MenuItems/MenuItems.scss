@@ -1,0 +1,13 @@
+@use "../../styles/partials/colors.scss" as *;
+
+.items {
+  margin-inline: .5rem;
+  padding: 0.25rem;
+  color: $palette-light-cream;
+  &--secondary{
+    background-color: $palette-red;
+    height: auto;
+    width: auto;
+    margin: 1rem;
+  }
+}
