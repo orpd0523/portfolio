@@ -20,10 +20,21 @@
       display: inline-flex;
       flex-direction: row;
       padding: 1rem;
-      
     }
     &__icon{
       color: $white;
+    }
+    &__center{
+      height: 6rem;
+      width: 6rem;
+      margin-left: 2rem;
+      margin-bottom: .5rem;
+      justify-content: center;
+    }
+    &__logo{
+      margin-top: .5rem;
+      height: 6rem;
+      width: 6rem;
     }
 }
 
