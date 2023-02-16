@@ -3,7 +3,7 @@ import "./MenuItems.scss";
 function MenuItems(props) {
   const { color = "primary" } = props;
   return (
-      <div>
+      <div className="menu">
       <div>
         <a className={`items items--${color}`}>Home</a>
         <a className={`items items--${color}`}>About</a>

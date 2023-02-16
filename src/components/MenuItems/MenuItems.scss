@@ -11,3 +11,15 @@
     margin: 1rem;
   }
 }
+
+.menu{
+      display: none;
+      visibility: hidden;
+@media screen and (min-width: 1280px) {
+    display: block;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+}
