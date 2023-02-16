@@ -4,7 +4,7 @@ function MenuItems(props) {
   const { color = "primary" } = props;
   return (
       <div className="menu">
-      <div>
+      <div className="container">
         <a className={`items items--${color}`}>Home</a>
         <a className={`items items--${color}`}>About</a>
         <a className={`items items--${color}`}>Projects</a>

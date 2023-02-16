@@ -19,3 +19,14 @@
     padding: 0;
   }
 }
+
+@media screen and (min-width: 960px) {
+    .card{
+      display: none;
+      visibility: hidden;
+      &--secondary{
+        // display: block;
+        // visibility: visible;
+      }
+    }
+}

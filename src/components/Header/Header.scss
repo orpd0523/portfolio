@@ -1,99 +1,122 @@
 @use "../../styles/partials/colors.scss" as *;
 
-.header{
-    background-color: $green;
-    color: $white;
-    height: 12rem;
+.header {
+  background-color: $green;
+  color: $white;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 1rem;
+  align-items: space-between;
+  &__menu {
+    display: none;
+    visibility: hidden;
+  }
+  &__main {
     display: flex;
-    flex-direction: column;
-    position: relative;
-    padding-bottom: 1rem;
-    align-items: space-between;
-    &__menu{
-      display: none;
-      visibility: hidden;
-    }
-    &__main{
-      display: flex;
-      gap: 1rem;
-      align-self: center;
-      margin-top: 1rem;
-      padding: 1rem;
-    }
-    &__item{
-        list-style: none;
-    }
-    &__container{
-      display: inline-flex;
-      flex-direction: row;
-    }
-    &__icon{
-      color: $white;
-    }
-    &__center{
-      align-self: center;
-      padding-top: 1rem;
-    }
-    &__logo{
-      height: 6rem;
-      width: 6rem;
-    }
+    gap: 1rem;
+    align-self: center;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__container {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  &__icon {
+    color: $white;
+  }
+  &__center {
+    align-self: center;
+    padding-top: 1rem;
+  }
+  &__logo {
+    height: 6rem;
+    width: 6rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .header {
-      max-width: 100%;
-      flex-direction: column;
-      justify-content: center;
-      height: 20rem;
-      &__container{
-        margin: 0;
-        padding-left: 0;
-        display: inline;
+  .header {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    height: 20rem;
+    &__container {
+      margin: 0;
+      padding-left: 0;
+      display: inline;
     }
-      &__item{
-        justify-content: space-evenly;
-        width: 100px; 
-        margin: 0;
-      }
-      &__logo{
-        height: 15rem;
-        width: 15rem;
-      }
-      &__main{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        gap: 1rem;
-        margin-bottom: 1rem;
-        padding: 0;
-        padding-right: 1rem;
-      }
-      &__center{
-        margin-top: 2rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      }
+    &__item {
+      justify-content: space-evenly;
+      width: 100px;
+      margin: 0;
     }
-  }
-  
-  @media screen and (min-width: 1280px) {
-    .header {
-      max-width: auto;
-      height: 3rem;
+    &__logo {
+      height: 15rem;
+      width: 15rem;
+    }
+    &__main {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      gap: 1rem;
+      margin-bottom: 1rem;
       padding: 0;
-      &__main{
-        margin: 0;
-      }
-      &__container{
-        display: none;
-        visibility: none;
-      }
-      &__center{
-        display: none;
-        visibility: none;
-      }
+      padding-right: 1rem;
+    }
+    &__center {
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
+}
+
+@media screen and (min-width: 960px) {
+  .header {
+    // width: 100%;
+    // max-width: 1100px;
+    width: 100vw;
+    max-width: 72rem;  
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+
+
+    margin-inline: auto;
+    height: auto;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__main {
+      margin: 0;
+      height: 0;
+      width: 0;
+      display: none;
+      visibility: hidden;
+    }
+    &__container {
+      display: none;
+      visibility: none;
+    }
+    &__center {
+      width: 100px;
+      height: 110px;
+      margin: 0;
+      margin-left: 1rem;
+    }
+    &__logo {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+}

@@ -8,10 +8,10 @@ import logo from "../../assets/logo.svg";
 function Header() {
   return (
     <div className="header">
-      <MenuItems color="header"/>
       <div className="header__center">
         <img src={logo} className="header__logo" />
       </div>
+      <MenuItems color="header"/>
       <div className="header__main">
         <div className="header__container">
           <a href="http://www.linkedin.com/in/operez0523-dev">
