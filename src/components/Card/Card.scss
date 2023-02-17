@@ -18,6 +18,9 @@
     font-weight: 600;
     padding: 0;
   }
+  &--about{
+    margin-top: 0;
+  }
   @media screen and (min-width: 960px) {
   
   &--desktop{
@@ -33,7 +36,6 @@
   &--secondary{
     height: 10rem;
     position: relative;
-    
   }
 }
 }

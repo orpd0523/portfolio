@@ -12,11 +12,21 @@
         justify-content: center;
         border-color: $palette-light-cream;
         &:active{
-            background-color: $palette-yellow;
+            background-color: $yellow;
             color: $green;
         }
         &:hover{
-            background-color: $palette-yellow;
+            background-color: $yellow;
+          }
+    }
+    &--about{
+        background-color: $palette-dark-blue;
+        &:active{
+            background-color: $yellow;
+            color: $char-black;
+        }
+        &:hover{
+            background-color: $yellow;
           }
     }
 }

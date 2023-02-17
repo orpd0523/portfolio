@@ -19,7 +19,7 @@
       color: $palette-dark-blue;
     }
     &:active {
-      color: $palette-yellow;
+      color: $yellow;
     }
     &:visited {
       color: $palette-light-cream;
@@ -34,6 +34,7 @@
     display: block;
     visibility: visible;
     padding: 0;
+    width: 100%;
   }
 }
 

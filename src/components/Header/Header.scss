@@ -33,7 +33,7 @@
       color: $palette-dark-blue;
     }
     &:active {
-      color: $palette-yellow;
+      color: $yellow;
     }
     &:visited {
       color: $white;
@@ -51,39 +51,14 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    max-width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    height: 20rem;
-    &__container {
-      margin: 0;
-      padding-left: 0;
-      display: inline;
-    }
-    &__item {
-      justify-content: space-evenly;
-      width: 100px;
-      margin: 0;
-    }
-    &__logo {
-      height: 15rem;
-      width: 15rem;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    height: auto;
     &__main {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      gap: 1rem;
-      margin-bottom: 1rem;
+      align-self: end;
       padding: 0;
-      padding-right: 1rem;
-    }
-    &__center {
-      margin-top: 2rem;
-      width: 100%;
-      display: flex;
-      justify-content: center;
+      margin: 0;
     }
   }
 }
@@ -94,6 +69,7 @@
     &__main{
       display: none;
       visibility: hidden;
+      
     }
     &__center{
       display: none;
@@ -102,6 +78,7 @@
     &__container{
       display: flex;
       justify-content: center;
+      width: 100%;
     }
   }
 }
