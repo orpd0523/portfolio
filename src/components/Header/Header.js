@@ -4,14 +4,17 @@ import { SiLinkedin } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import logo from "../../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
       <div className="header__center">
-        <img src={logo} alt="logo" className="header__logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" className="header__logo" />
+        </Link>
       </div>
-      <MenuItems color="header"/>
+      <MenuItems color="header" />
       <div className="header__main">
         <div className="header__container">
           <a href="http://www.linkedin.com/in/operez0523-dev">

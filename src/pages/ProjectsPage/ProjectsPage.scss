@@ -1,0 +1,8 @@
+@use "../../styles/partials/colors.scss" as *;
+
+.projects{
+    &__box{
+        border: 2px solid blue;
+        margin-top: 1rem;
+    }
+}
