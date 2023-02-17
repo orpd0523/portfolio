@@ -13,6 +13,10 @@
         border-color: $palette-light-cream;
         &:active{
             background-color: $palette-yellow;
+            color: $green;
         }
+        &:hover{
+            background-color: $palette-yellow;
+          }
     }
 }

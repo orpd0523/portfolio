@@ -35,8 +35,8 @@
       margin: 0;
       align-self: flex-start;
       color: $white;
-      font-weight: 600;
-      font-size: xx-large;
+      font-weight: 500;
+      font-size: 4rem;
     }
     &__title3 {
       padding: 0;
@@ -46,19 +46,25 @@
       font-weight: 500;
       padding-top: 0.5rem;
     }
+    &__bar{
+      color: $white;
+    }
     &__title4 {
       padding: 0;
       margin: 0;
       color: $white;
       font-weight: 200;
       font-size: xx-large;
+      max-width: 16rem;
+      align-self: flex-start;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
     }
     &__main {
       flex-direction: column;
       display: flex;
       align-items: center;
       justify-content: center;
-      
     }
     &__round {
       justify-content: center;
@@ -83,11 +89,20 @@
       color: $pink;
       height: 1.75rem;
       width: auto;
+      &:hover {
+        color: $palette-yellow;
+      }
+      &:active {
+        color: $palette-yellow;
+      }
+      &:visited {
+        color: $palette-yellow;
+      }
     }
-    &__button{
+    &__button {
       display: flex;
       align-self: flex-start;
-      margin-top: 4rem;
+      margin-top: 2rem;
       padding-left: 2rem;
     }
   }

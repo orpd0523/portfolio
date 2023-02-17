@@ -29,6 +29,15 @@
   }
   &__icon {
     color: $white;
+    &:hover {
+      color: $palette-dark-blue;
+    }
+    &:active {
+      color: $palette-yellow;
+    }
+    &:visited {
+      color: $white;
+    }
   }
   &__center {
     align-self: center;

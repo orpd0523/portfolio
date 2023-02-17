@@ -29,7 +29,7 @@ function Hero() {
         <div className="hero__main">
           <h2 className="hero__title1">Hi, I'm</h2>
           <h1 className="hero__title2">Olga Pérez</h1>
-          <h3 className="hero__title3">Software Developer | Freelancer</h3>
+          <h3 className="hero__title3">Software Developer <span className="hero__bar">|</span> Freelancer</h3>
           <h2 className="hero__title4">Welcome to my portfolio...</h2>
           <div className="hero__button">
             <Button variant="talk">Let's Talk</Button>
