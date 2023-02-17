@@ -1,2 +1,84 @@
 @use "../../styles/partials/colors.scss" as *;
 
+.header {
+  background-color: $green;
+  color: $white;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 1rem;
+  align-items: space-between;
+  &__menu {
+    display: none;
+    visibility: hidden;
+  }
+  &__main {
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__container {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  &__icon {
+    color: $white;
+    &:hover {
+      color: $palette-dark-blue;
+    }
+    &:active {
+      color: $yellow;
+    }
+    &:visited {
+      color: $white;
+    }
+  }
+  &__center {
+    align-self: center;
+    padding-top: 1rem;
+  }
+  &__logo {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    height: auto;
+    &__main {
+      align-self: end;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .header {
+    height: 3rem;
+    &__main{
+      display: none;
+      visibility: hidden;
+      
+    }
+    &__center{
+      display: none;
+      visibility: hidden;
+    }
+    &__container{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}

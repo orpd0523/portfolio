@@ -1,0 +1,49 @@
+@use "../../styles/partials/colors.scss" as *;
+
+.items {
+  margin-inline: 0.5rem;
+  padding: 0.25rem;
+  color: $palette-light-cream;
+  &--secondary {
+    background-color: $palette-red;
+    height: auto;
+    width: auto;
+    margin: 1rem;
+  }
+  &--header {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      color: $palette-dark-blue;
+    }
+    &:active {
+      color: $yellow;
+    }
+    &:visited {
+      color: $palette-light-cream;
+    }
+  }
+}
+
+.menu {
+  display: none;
+  visibility: hidden;
+  @media screen and (min-width: 960px) {
+    display: block;
+    visibility: visible;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 1rem;
+  }
+}
