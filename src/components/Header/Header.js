@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header__center">
-        <img src={logo} className="header__logo" />
+        <img src={logo} alt="logo" className="header__logo" />
       </div>
       <MenuItems color="header"/>
       <div className="header__main">

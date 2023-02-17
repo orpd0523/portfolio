@@ -18,15 +18,23 @@
     font-weight: 600;
     padding: 0;
   }
+  @media screen and (min-width: 960px) {
+  
+  &--desktop{
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  &--secondary{
+    height: 10rem;
+    position: relative;
+    
+  }
+}
 }
 
-@media screen and (min-width: 960px) {
-    .card{
-      display: none;
-      visibility: hidden;
-      &--secondary{
-        // display: block;
-        // visibility: visible;
-      }
-    }
-}
+
