@@ -22,7 +22,8 @@
     margin-top: 0;
   }
   &--projects{
-    color: red;
+    color: $palette-dark-blue;
+    max-width: fit-content;
   }
   @media screen and (min-width: 960px) {
   
