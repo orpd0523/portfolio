@@ -49,7 +49,7 @@
     font-weight: 400;
     margin-top: 1rem;
   }
-  &__button{
+  &__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,59 +60,59 @@
     display: none;
     visibility: hidden;
   }
-  &__rcontainer{
+  &__rcontainer {
     display: none;
     visibility: hidden;
   }
   @media screen and (min-width: 768px) {
     padding-inline: 2rem;
-    &__paragraph{
+    &__paragraph {
       padding-left: 1.5rem;
     }
-    &__pcontainer{
+    &__pcontainer {
       display: flex;
       flex-direction: row;
     }
-    &__tcontainer{
+    &__tcontainer {
       display: flex;
       margin-left: 1.25rem;
     }
   }
   @media screen and (min-width: 960px) {
-    &__about{
-    margin-inline: auto;
-    }  
-    &__container{
-        flex-direction: row;
+    &__about {
+      margin-inline: auto;
     }
-    &__button{
+    &__container {
+      flex-direction: row;
+    }
+    &__button {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 2.5rem;
       margin-bottom: 1.5rem;
     }
-    &__main{
-        min-width: 25rem;
-        height: 35rem;
-        flex-grow: 1;
-        margin-top: 10rem;
+    &__main {
+      min-width: 25rem;
+      height: 35rem;
+      flex-grow: 1;
+      margin-top: 10rem;
     }
-    &__aside{
-        padding-top: 10.5rem;
-        flex-grow: 3;
+    &__aside {
+      padding-top: 10.5rem;
+      flex-grow: 3;
     }
-    &__pcontainer{
+    &__pcontainer {
       display: flex;
       flex-direction: column;
     }
-    &__tcontainer{
+    &__tcontainer {
       display: flex;
       margin-left: 1.5rem;
     }
-    &__ptitle{
+    &__ptitle {
       margin-top: 4rem;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
     &__icon {
       height: 2rem;
@@ -135,40 +135,48 @@
       margin-top: 5rem;
       justify-content: space-evenly;
     }
-    &__rcontainer{
-        display: block;
-        visibility: visible;
-        display: flex;
-        justify-content: center;
+    &__rcontainer {
+      display: block;
+      visibility: visible;
+      display: flex;
+      border-radius: 8rem;
+      width: 8.5rem;
+      height: 3rem;
+      background-color: $char-black;
+      border: 1px solid $char-black;
+      text-align: center;
+      margin-inline: auto;
+      margin-top: 5rem;
+      &:hover{
+        background-color: $pink;
+      }
+      &:active{
+        background-color: $white;
+      }
+      
     }
-    &__resume{
-      margin-top: 4rem;
+    &__resume {
       text-decoration: none;
       color: $white;
-      border-radius: 8rem;
-      padding: 1rem;
-      width: 8.5rem;
-      display: flex;
-      justify-content: center;
-      background-color: $char-black;
-      font-weight: 500;
+      padding: .75rem;
+      font-weight: 600;
+      font-size: large;
+      width: 100%;
+      height: 100%;
       &:active{
-        color: $palette-dark-blue;
-    }
-    &:hover{
-        background-color: $pink;
+        color: $char-black;
       }
     }
   }
   @media screen and (min-width: 1100px) {
-    &__paragraph{
+    &__paragraph {
       max-width: 36.75rem;
     }
-    &__button{
+    &__button {
       max-width: 36.75rem;
     }
-    &__aside{
+    &__aside {
       padding-top: 14rem;
-  }
+    }
   }
 }
