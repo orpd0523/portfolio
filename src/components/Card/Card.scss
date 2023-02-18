@@ -25,6 +25,15 @@
     color: $palette-dark-blue;
     max-width: fit-content;
   }
+  &--holder{
+    background-color: $raisin-black;
+    color: $white;
+    border-radius: 0;
+  }
+  &--holder1{
+    display: none;
+    visibility: hidden;
+  }
   @media screen and (min-width: 960px) {
     &--desktop {
       border: none;
@@ -45,5 +54,13 @@
     &--projects {
       color: $palette-dark-blue;
     }
+      &--holder1{
+        background-color: $raisin-black;
+        color: $white;
+        border-radius: 0;
+        display: block;
+        visibility: visible;
+      }
+    
   }
 }

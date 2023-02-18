@@ -2,7 +2,7 @@
 
 .projects{
     &__box{
-        background-color: $char-black;
+        background-color: $red;
         border-radius: 1rem;
         margin-inline: auto;
         margin-top: 3rem;
@@ -10,7 +10,7 @@
         width: 12rem;
         height: 4rem;
         &:hover{
-            background-color: $ruby-red;
+            background-color: $char-black;
         }
     }
     &__link{
@@ -48,15 +48,23 @@
         &__box{
             width: 25rem;
         }
+        &__image{
+            height: 20rem;
+            width: 20rem;
+        }
+        &__container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 6rem;
+            max-width: 70rem;
+            margin-inline: auto;
+        }
     }
     @media screen and (min-width: 1280px) {
         &__hidden{
             display: block;
             visibility: visible;
-        }
-        &__image{
-            height: 20rem;
-            width: 20rem;
         }
     }
 }
