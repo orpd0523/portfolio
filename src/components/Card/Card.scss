@@ -9,8 +9,8 @@
   box-shadow: 0 0.125rem 0.3125rem;
   padding: 0.25rem;
   background-color: $white;
-  &--secondary{
-    background-color:$char-black;
+  &--secondary {
+    background-color: $char-black;
     color: $palette-light-cream;
     height: auto;
     width: auto;
@@ -18,30 +18,32 @@
     font-weight: 600;
     padding: 0;
   }
-  &--about{
+  &--about {
     margin-top: 0;
   }
-  &--projects{
+  &--projects {
     color: $palette-dark-blue;
     max-width: fit-content;
   }
   @media screen and (min-width: 960px) {
-  
-  &--desktop{
-    border: none;
-    box-shadow: none;
-    background-color: transparent;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-inline: auto;
+    &--desktop {
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      margin-inline: auto;
+    }
+    &--secondary {
+      height: 10rem;
+      position: relative;
+    }
   }
-  &--secondary{
-    height: 10rem;
-    position: relative;
+  @media screen and (min-width: 1280px) {
+    &--projects {
+      color: $palette-dark-blue;
+    }
   }
 }
-}
-
-
