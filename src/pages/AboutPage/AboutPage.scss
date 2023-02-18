@@ -60,6 +60,10 @@
     display: none;
     visibility: hidden;
   }
+  &__rcontainer{
+    display: none;
+    visibility: hidden;
+  }
   @media screen and (min-width: 768px) {
     padding-inline: 2rem;
     &__paragraph{
@@ -78,7 +82,6 @@
     &__about{
     margin-inline: auto;
     }  
-
     &__container{
         flex-direction: row;
     }
@@ -129,13 +132,32 @@
       display: block;
       visibility: visible;
       display: flex;
-      margin-top: 14rem;
+      margin-top: 5rem;
       justify-content: space-evenly;
     }
-    &__box{
-      // display: flex;
-      // justify-content: center;
-      // width: 100%;
+    &__rcontainer{
+        display: block;
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+    }
+    &__resume{
+      margin-top: 4rem;
+      text-decoration: none;
+      color: $white;
+      border-radius: 8rem;
+      padding: 1rem;
+      width: 8.5rem;
+      display: flex;
+      justify-content: center;
+      background-color: $char-black;
+      font-weight: 500;
+      &:active{
+        color: $palette-dark-blue;
+    }
+    &:hover{
+        background-color: $pink;
+      }
     }
   }
   @media screen and (min-width: 1100px) {

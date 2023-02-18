@@ -17,6 +17,9 @@ function AboutPage() {
           <h1 className="about__title">Olga Pérez</h1>
           <h2 className="about__title2">Software Developer</h2>
 
+          <div className="about__rcontainer">
+            <a href="https://drive.google.com/file/d/1ytP4prw1zVdIuJUd2gnMc1ssJTOZCwWm/view?usp=sharing" alt="resume" className="about__resume">Resume</a>
+          </div>
           
           <div className="about__boxicon">
         <div className="about__box">
