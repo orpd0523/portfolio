@@ -13,6 +13,7 @@ function ProjectsPage() {
           *Current Projects*
         </a>
       </div>
+
       <div className="projects__container">
         <Card color="holder">
           <Card color="projects">
@@ -26,23 +27,23 @@ function ProjectsPage() {
           </Card>
           <div className="projects__description">
             <p className="projects__project">
-              <span className="project__title">Project:</span> EventosHyJ
+              <span className="projects__title">Project:</span> EventosHyJ
             </p>
             <p className="project__type">
-              <span className="project__title">Type:</span> Freelancing
+              <span className="projects__title">Type:</span> Freelancing
             </p>
             <p className="projects__response">
-              <span className="project__title">Responsive:</span> Mobile, Tablet, Desktop
+              <span className="projects__title">Responsive:</span> Mobile, Tablet, Desktop
             </p>
             <p className="projects__language">
-              <span className="project__title">Languages:</span> HTML5, CSS, JavaScript
+              <span className="projects__title">Languages:</span> HTML5, CSS, JavaScript
             </p>
             <p className="projects__frameworks">
-              <span className="project__title">Frameworks/Libraries:</span> React, Zustand,
+              <span className="projects__title">Frameworks/Libraries:</span> React, Zustand,
               react-router-dom, React Icons
             </p>
             <p className="projects__technology">
-              <span className="project__title">Technologies:</span> GitHub, Netlify
+              <span className="projects__title">Technologies:</span> GitHub, Netlify
             </p>
           </div>
         </Card>
@@ -55,22 +56,22 @@ function ProjectsPage() {
           </Card>
           <div className="projects__description">
             <p className="projects__project">
-              <span className="project__title">Project:</span> Capstone
+              <span className="projects__title">Project:</span> Capstone
             </p>
             <p className="project__type">
               <span className="project__title">Type:</span> Personal Project
             </p>
             <p className="projects__response">
-              <span className="project__title">Responsive:</span> Mobile, Tablet, Desktop
+              <span className="projects__title">Responsive:</span> Mobile, Tablet, Desktop
             </p>
             <p className="projects__language">
-              <span className="project__title">Languages:</span> HTML5, CSS, JavaScript
+              <span className="projects__title">Languages:</span> HTML5, CSS, JavaScript
             </p>
             <p className="projects__frameworks">
-              <span className="project__title">Frameworks/Libraries:</span> React, Zustand, SASS, react-router-dom, React Icons
+              <span className="projects__title">Frameworks/Libraries:</span> React, Zustand, SASS, react-router-dom, React Icons
             </p>
             <p className="projects__technology">
-              <span className="project__title">Technologies:</span> GitHub, Netlify, MangoDB
+              <span className="projects__title">Technologies:</span> GitHub, Netlify, MangoDB
             </p>
           </div>
         </Card>
@@ -83,22 +84,22 @@ function ProjectsPage() {
           </Card>
           <div className="projects__description">
             <p className="projects__project">
-              <span className="project__title">Project:</span> Fansite
+              <span className="projects__title">Project:</span> Fansite
             </p>
             <p className="project__type">
-              <span className="project__title">Type:</span> Personal Project
+              <span className="projects__title">Type:</span> Personal Project
             </p>
             <p className="projects__response">
-              <span className="project__title">Responsive:</span> Mobile, Tablet, Desktop
+              <span className="projects__title">Responsive:</span> Mobile, Tablet, Desktop
             </p>
             <p className="projects__language">
-              <span className="project__title">Languages:</span> HTML5, CSS, JavaScript
+              <span className="projects__title">Languages:</span> HTML5, CSS, JavaScript
             </p>
             <p className="projects__frameworks">
-              <span className="project__title">Frameworks/Libraries:</span> SASS 
+              <span className="projects__title">Frameworks/Libraries:</span> SASS 
             </p>
             <p className="projects__technology">
-              <span className="project__title">Technologies:</span> GitHub, MongoDB
+              <span className="projects__title">Technologies:</span> GitHub, MongoDB
             </p>
           </div>
         </Card>
@@ -114,21 +115,21 @@ function ProjectsPage() {
                 />
               </a>
             </Card>
-            <div className="projects__description">
+            <div className="projects__description1">
             <p className="projects__project">
-              <span className="project__title">Project:</span> Travel Site
+              <span className="projects__title">Project:</span> Travel Site
             </p>
             <p className="project__type">
-              <span className="project__title">Type:</span> Personal Project
+              <span className="projects__title">Type:</span> Personal Project
             </p>
             <p className="projects__response">
-              <span className="project__title">Responsive:</span> Desktop
+              <span className="projects__title">Responsive:</span> Desktop
             </p>
             <p className="projects__language">
-              <span className="project__title">Languages:</span> HTML5, CSS
+              <span className="projects__title">Languages:</span> HTML5, CSS
             </p>
             <p className="projects__technology">
-              <span className="project__title">Technologies:</span> GitHub
+              <span className="projects__title">Technologies:</span> GitHub
             </p>
           </div>
           </div>

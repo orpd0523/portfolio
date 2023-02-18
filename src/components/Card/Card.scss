@@ -29,10 +29,21 @@
     background-color: $raisin-black;
     color: $white;
     border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 362px;
   }
   &--holder1{
     display: none;
     visibility: hidden;
+  }
+  @media screen and (min-width: 768px) {
+    &--holder{
+      flex-direction: row;
+      height: 664px;
+      min-width: 666px;
+    }
   }
   @media screen and (min-width: 960px) {
     &--desktop {
@@ -49,10 +60,23 @@
       height: 10rem;
       position: relative;
     }
+    &--holder{
+      max-height: 30rem;
+      max-width: 46.875rem;
+      margin-inline: auto;
+    }
+  }
+  @media screen and (min-width: 1100px){
+    &--holder{
+      margin-inline: auto;
+      max-height: 30rem;
+      min-width: 50rem;
+    }
   }
   @media screen and (min-width: 1280px) {
     &--projects {
       color: $palette-dark-blue;
+      max-height: 20.75rem;
     }
       &--holder1{
         background-color: $raisin-black;
@@ -60,6 +84,8 @@
         border-radius: 0;
         display: block;
         visibility: visible;
+        max-height: 30rem;
+        min-width: 50rem;
       }
     
   }
