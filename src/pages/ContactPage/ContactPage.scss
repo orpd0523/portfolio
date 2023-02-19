@@ -9,8 +9,6 @@
     display: none;
     visibility: hidden;
   }
-  &__container {
-  }
   &__outside {
     color: $onyx;
     font-size: 3rem;
@@ -51,8 +49,26 @@
         margin: 0;
         justify-content: flex-start;
       }
-      &__break{
-        
+      &__square{
+        display: flex;
+        margin-left: 3rem;
+        margin-bottom: 2rem;
+      }
+      &__social{
+        margin-left: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: .25rem;
+        text-decoration: none;
+        color: $char-black;
+      }
+      &__title3{
+        color: $char-black;
+        max-width: 6rem;
+        padding-left: 3rem;
+        margin-top: 4rem;
+        font-size: 2rem;
+        font-weight: 300;
       }
   }
 }
