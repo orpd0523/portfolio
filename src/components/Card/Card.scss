@@ -38,11 +38,30 @@
     display: none;
     visibility: hidden;
   }
+  &--contact2{
+    display: none;
+    visibility: hidden;
+  }
+  &--contact1{
+    height: 30rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline:auto;
+    color: $eggshell-white;
+    background-color: $oxford-blue;
+    border-radius: 0;
+  }
   @media screen and (min-width: 768px) {
     &--holder{
       flex-direction: row;
       height: 664px;
       min-width: 666px;
+    }
+    &--contact1{
+      height: 30rem;
+      width: 35rem;
     }
   }
   @media screen and (min-width: 960px) {
@@ -64,6 +83,20 @@
       max-height: 30rem;
       max-width: 46.875rem;
       margin-inline: auto;
+    }
+    &--contact2{
+      display: block;
+      visibility: visible;
+      height: 30rem;
+      width: 20rem;
+      background-color: $light-yellow;
+      color: $char-black;
+    }
+    &--contact1{
+      height: 34rem;
+      width: 48rem;
+      padding-left: 15rem;
+      margin-top: 5rem;
     }
   }
   @media screen and (min-width: 1100px){

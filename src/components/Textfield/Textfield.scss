@@ -1,0 +1,30 @@
+@use "../../styles/partials/colors.scss" as *;
+
+.textfield {
+  &__input {
+    max-height: 12rem;
+    height: 12rem;
+    width: 16rem;
+    border-radius: 1.5rem;
+    border: none;
+    padding: 1.5rem;
+    resize: none;
+    color: $char-black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    &::placeholder {
+      color: $char-black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    @media screen and (min-width: 768px) {
+      width: 22rem;
+    }
+    @media screen and (min-width: 960px) {
+        max-height: 16rem;
+        height: 16rem;
+        width: 28rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 2rem;
+      }
+  }
+}

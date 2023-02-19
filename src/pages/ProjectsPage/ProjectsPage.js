@@ -47,7 +47,6 @@ function ProjectsPage() {
             </p>
           </div>
         </Card>
-
         <Card color="holder">
           <Card color="projects">
             <a href="https://op-capstone.netlify.app/">
@@ -99,7 +98,7 @@ function ProjectsPage() {
               <span className="projects__title">Frameworks/Libraries:</span> SASS 
             </p>
             <p className="projects__technology">
-              <span className="projects__title">Technologies:</span> GitHub, MongoDB
+              <span className="projects__title">Technologies:</span> GitHub, Netlify, MongoDB
             </p>
           </div>
         </Card>
@@ -129,7 +128,7 @@ function ProjectsPage() {
               <span className="projects__title">Languages:</span> HTML5, CSS
             </p>
             <p className="projects__technology">
-              <span className="projects__title">Technologies:</span> GitHub
+              <span className="projects__title">Technologies:</span> GitHub, Netlify
             </p>
           </div>
           </div>

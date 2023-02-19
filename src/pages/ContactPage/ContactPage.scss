@@ -1,0 +1,58 @@
+@use "../../styles/partials/colors.scss" as *;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  &__title1 {
+    display: none;
+    visibility: hidden;
+  }
+  &__container {
+  }
+  &__outside {
+    color: $onyx;
+    font-size: 3rem;
+    text-align: center;
+  }
+  &__box{
+    margin: 1.5rem;
+  }
+  @media screen and (min-width: 768px) {
+    &__outside {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+      }
+  }
+  @media screen and (min-width: 960px) {
+    &__title1 {
+        display: block;
+        visibility: visible;
+        margin: 0;
+        margin-right: 2rem;
+        margin-top: 2.5rem;
+        font-size: 2.25rem;
+        font-weight: 300;
+      }
+      &__title2 {
+        margin: 0;
+        margin-top: 1rem;
+        font-size: 1.15rem;
+        font-weight: 200;
+        max-width: 200px;
+        margin-right: 10rem;
+      }
+      &__outside {
+        display: none;
+        visibility: hidden;
+      }
+      &__box{
+        margin: 0;
+        justify-content: flex-start;
+      }
+      &__break{
+        
+      }
+  }
+}
