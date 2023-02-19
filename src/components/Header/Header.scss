@@ -50,6 +50,15 @@
   }
 }
 
+.switch{
+  display: none;
+  visibility: hidden;
+}
+.slider{
+  display: none;
+  visibility: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     flex-direction: row;
@@ -82,4 +91,75 @@
       width: 100%;
     }
   }
+  .switch{
+    display: block;
+    visibility: visible;
+  }
+  .slider{
+    display: block;
+    visibility: visible;
+  }
+  /* The switch - the box around the slider */
+.switch {
+  font-size: 12px;
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+ }
+ 
+ /* Hide default HTML checkbox */
+ .switch input {
+  opacity: 1;
+  width: 0;
+  height: 0;
+ }
+ 
+ /* The slider */
+ .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  background: #fff;
+  transition: .4s;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+ }
+
+
+ .bold{
+  margin-inline: auto;
+  position: relative;
+  margin-top: .75rem;
+  display: flex;
+  left: -410px;
+  justify-content: center;
+  margin-right: 1rem;
+ }
+ 
+ .slider:before {
+  position: absolute;
+  content: "";
+  height: 1.9em;
+  width: 1.9em;
+  border-radius: 16px;
+  left: 1.2px;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px #999999;
+  transition: .4s;
+ }
+ 
+ input:checked + .slider {
+  background-color: #000000;
+  border: 1px solid transparent;
+ }
+ 
+ input:checked + .slider:before {
+  transform: translateX(1.5em);
+ }
 }

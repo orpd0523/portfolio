@@ -21,13 +21,13 @@
   }
   &--about {
     background-color: $palette-dark-blue;
-    &:active {
-      background-color: $yellow;
-      color: $char-black;
-    }
-    &:hover {
-      background-color: $yellow;
-    }
+   &:hover{
+        background-color: $pink;
+      }
+      &:active{
+        background-color: $white;
+        color: $char-black;
+      }
   }
   &--contact {
     background-color: $pink;

@@ -6,6 +6,7 @@ import { SiLinkedin } from "react-icons/si";
 import { AiFillPhone } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { BsPersonFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function ContactPage() {
   return (
@@ -32,27 +33,29 @@ function ContactPage() {
 
           <div className="contact__square">
             <div className="hero__hold">
+              <Link to="/about">
                 <BsPersonFill className="hero__icon" size={22} />
+              </Link>
             </div>
-            <h3 className="contact__social">
-              Olga Pérez
-            </h3>
+            <Link to="/about" style={{ textDecoration: 'none' }}>
+              <h3 className="contact__social">Olga Pérez</h3>
+            </Link>
           </div>
 
           <div className="contact__square">
             <div className="hero__hold">
-              <a href="tel:+1832-790-0105">
+              <a href="tel:+1832-790-0105" rel="phone number">
                 <AiFillPhone className="hero__icon" size={22} />
               </a>
             </div>
-            <a href="tel:+1832-790-0105" className="contact__social">
+            <a href="tel:+1832-790-0105" rel="phone number" className="contact__social">
               832-790-0105
             </a>
           </div>
 
           <div className="contact__square">
             <div className="hero__hold">
-              <a href="mailto:orpd0523@gmail.com?subject=">
+              <a href="mailto:orpd0523@gmail.com?subject=" rel="email">
                 <MdEmail className="hero__icon" size={22} />
               </a>
             </div>
@@ -66,17 +69,18 @@ function ContactPage() {
 
           <div className="contact__square">
             <div className="hero__hold">
-              <a href="http://www.linkedin.com/in/operez0523-dev">
+              <a href="http://www.linkedin.com/in/operez0523-dev" rel="linkedin">
                 <SiLinkedin className="hero__icon" size={22} />
               </a>
             </div>
             <a
-              href="http://www.linkedin.com/in/operez0523-dev"
+              href="http://www.linkedin.com/in/operez0523-dev" rel="linkedin"
               className="contact__social"
             >
               operez0523-dev
             </a>
           </div>
+
         </Card>
       </div>
     </div>

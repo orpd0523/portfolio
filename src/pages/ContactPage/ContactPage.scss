@@ -61,6 +61,15 @@
         padding-top: .25rem;
         text-decoration: none;
         color: $char-black;
+        &:hover {
+          color: $pink;
+        }
+        &:active {
+          color: $yellow;
+        }
+        &:visited {
+          color: $char-black;
+        }
       }
       &__title3{
         color: $char-black;
