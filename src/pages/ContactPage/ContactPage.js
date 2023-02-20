@@ -14,21 +14,18 @@ function ContactPage() {
   const [message, setMessage] = useState("");
   const handleSubmit = () => {
     const URL = process.env.REACT_APP_CONTACT_URL;
-    axios.post(URL, {message})
-    .then((res)=>{
-      console.log(res)
-    })
+    axios.post(URL, { message }).then((res) => {
+      console.log(res);
+    });
   };
   return (
     <div className="contact">
       <div className="contact__container">
         <h1 className="contact__outside">Let's Work Together!</h1>
         <Card color="contact1">
-
           <div className="contact__container">
             <Card color="contact2">
               <h2 className="contact__title3">Contact Information:</h2>
-
               <div className="contact__square">
                 <div className="hero__hold">
                   <Link to="/about">
@@ -39,7 +36,6 @@ function ContactPage() {
                   <h3 className="contact__social">Olga Pérez</h3>
                 </Link>
               </div>
-
               <div className="contact__square">
                 <div className="hero__hold">
                   <a href="tel:+1832-790-0105" rel="phone number">
@@ -54,7 +50,6 @@ function ContactPage() {
                   832-790-0105
                 </a>
               </div>
-
               <div className="contact__square">
                 <div className="hero__hold">
                   <a href="mailto:orpd0523@gmail.com?subject=" rel="email">
@@ -68,7 +63,6 @@ function ContactPage() {
                   orpd0523@gmail.com
                 </a>
               </div>
-
               <div className="contact__square">
                 <div className="hero__hold">
                   <a
@@ -88,7 +82,6 @@ function ContactPage() {
               </div>
             </Card>
           </div>
-
           <h1 className="contact__title1">Let's Work Together!</h1>
           <div className="contact__box">
             <h2 className="contact__title2">
@@ -97,8 +90,11 @@ function ContactPage() {
           </div>
           <Textfield placeholder="Full Name"></Textfield>
           <Textfield placeholder="Email"></Textfield>
-          <Textfield Node="textarea" primary="message"
-            value={message} placeholder="Your Message Here..."
+          <Textfield
+            Node="textarea"
+            primary="message"
+            value={message}
+            placeholder="Your Message Here..."
             onChange={(e) => setMessage(e.target.value)}
           ></Textfield>
           <Button variant="contact" type="submit" onClick={handleSubmit}>

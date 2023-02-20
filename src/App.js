@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <Sidebar/> */}
         <Header />
         <Routes>
           <Route exact path="/" element={<HomePage/>} />
