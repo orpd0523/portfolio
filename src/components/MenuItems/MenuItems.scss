@@ -15,6 +15,9 @@
     align-items: center;
     font-weight: 600;
     text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-family: Work Sans, Verdana, Geneva, Tahoma, sans-serif;
     &:hover {
       color: $palette-dark-blue;
     }

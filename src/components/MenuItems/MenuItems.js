@@ -1,4 +1,5 @@
 import "./MenuItems.scss";
+import Button from "../Button/Button"
 import { useNavigate } from "react-router-dom";
 
 function MenuItems(props) {
@@ -7,33 +8,33 @@ function MenuItems(props) {
   return (
     <div className="menu">
       <div className="container">
-        <p onClick={() => navigate("/")} className={`items items--${color}`}>
+        <Button onClick={() => navigate("/")} className={`items items--${color}`}>
           Home
-        </p>
-        <p
+        </Button>
+        <Button
           onClick={() => navigate("/about")}
           className={`items items--${color}`}
         >
           About
-        </p>
+        </Button>
         <div className="bold">
           <label className="switch">
             <input type="checkbox"></input>
             <span className="slider"></span>
           </label>
         </div>
-        <p
+        <Button
           onClick={() => navigate("/projects")}
           className={`items items--${color}`}
         >
           Projects
-        </p>
-        <p
+        </Button>
+        <Button
           onClick={() => navigate("/contact")}
           className={`items items--${color}`}
         >
           Contact
-        </p>
+        </Button>
       </div>
       {props.children}
     </div>
