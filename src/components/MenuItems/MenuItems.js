@@ -7,33 +7,33 @@ function MenuItems(props) {
   return (
     <div className="menu">
       <div className="container">
-        <a onClick={() => navigate("/")} className={`items items--${color}`}>
+        <p onClick={() => navigate("/")} className={`items items--${color}`}>
           Home
-        </a>
-        <a
+        </p>
+        <p
           onClick={() => navigate("/about")}
           className={`items items--${color}`}
         >
           About
-        </a>
+        </p>
         <div className="bold">
           <label className="switch">
             <input type="checkbox"></input>
             <span className="slider"></span>
           </label>
         </div>
-        <a
+        <p
           onClick={() => navigate("/projects")}
           className={`items items--${color}`}
         >
           Projects
-        </a>
-        <a
+        </p>
+        <p
           onClick={() => navigate("/contact")}
           className={`items items--${color}`}
         >
           Contact
-        </a>
+        </p>
       </div>
       {props.children}
     </div>
