@@ -9,19 +9,19 @@ function Main() {
   return (
     <div className="main">
       <Card color="desktop">
-        <Link to="/about">
+        <Link to="/about" style={{textDecoration:'none'}}>
           <Card color="secondary">
             <img src={about} alt="about" className="main__image" />
             <h3 className="main__title">About</h3>
           </Card>
         </Link>
-        <Link to="/projects">
+        <Link to="/projects" style={{textDecoration:'none'}}>
           <Card color="secondary">
             <img src={projects} alt="about" className="main__image" />
             <h3 className="main__title">Projects</h3>
           </Card>
         </Link>
-        <Link to="/contact">
+        <Link to="/contact" style={{textDecoration:'none'}}>
           <Card color="secondary">
             <img src={contact} alt="about" className="main__image" />
             <h3 className="main__title">Contact</h3>
