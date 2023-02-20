@@ -36,6 +36,7 @@
       &__title2 {
         margin: 0;
         margin-top: 1rem;
+        margin-bottom: .5rem;
         font-size: 1.15rem;
         font-weight: 200;
         max-width: 200px;
@@ -61,15 +62,16 @@
         padding-top: .25rem;
         text-decoration: none;
         color: $char-black;
+        &:visited {
+          color: $char-black;
+        }
         &:hover {
           color: $pink;
         }
         &:active {
           color: $yellow;
         }
-        &:visited {
-          color: $char-black;
-        }
+        
       }
       &__title3{
         color: $char-black;

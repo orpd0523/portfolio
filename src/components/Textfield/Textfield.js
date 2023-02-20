@@ -1,9 +1,10 @@
 import "./Textfield.scss";
 
-function Textfield() {
+function Textfield(props) {
+  const { Node = "input", primary = "form", ...otherProps } = props;
   return (
     <div className="textfield">
-      <textarea className="textfield__input" placeholder="Your Message Here..."></textarea>
+      <Node className={`form form--${primary}`} {...otherProps}/>
     </div>
   );
 }

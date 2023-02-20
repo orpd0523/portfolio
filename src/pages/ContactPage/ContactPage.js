@@ -7,13 +7,24 @@ import { AiFillPhone } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { BsPersonFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import axios from "axios";
 
 function ContactPage() {
+  const [message, setMessage] = useState("");
+  const handleSubmit = () => {
+    const URL = process.env.REACT_APP_CONTACT_URL;
+    axios.post(URL, {message})
+    .then((res)=>{
+      console.log(res)
+    })
+  };
   return (
     <div className="contact">
       <div className="contact__container">
         <h1 className="contact__outside">Let's Work Together!</h1>
         <Card color="contact1">
+
           <div className="contact__container">
             <Card color="contact2">
               <h2 className="contact__title3">Contact Information:</h2>
@@ -61,15 +72,15 @@ function ContactPage() {
               <div className="contact__square">
                 <div className="hero__hold">
                   <a
-                    href="http://www.linkedin.com/in/operez0523-dev"
-                    rel="linkedin"
+                    href="https://www.linkedin.com/in/operez0523-dev"
+                    rel="external"
                   >
                     <SiLinkedin className="hero__icon" size={22} />
                   </a>
                 </div>
                 <a
-                  href="http://www.linkedin.com/in/operez0523-dev"
-                  rel="linkedin"
+                  href="https://www.linkedin.com/in/operez0523-dev"
+                  rel="external"
                   className="contact__social"
                 >
                   operez0523-dev
@@ -77,14 +88,20 @@ function ContactPage() {
               </div>
             </Card>
           </div>
+
           <h1 className="contact__title1">Let's Work Together!</h1>
           <div className="contact__box">
             <h2 className="contact__title2">
               I look forward to hear from you...
             </h2>
           </div>
-          <Textfield>textfield will go here</Textfield>
-          <Button variant="contact" type="submit">
+          <Textfield placeholder="Full Name"></Textfield>
+          <Textfield placeholder="Email"></Textfield>
+          <Textfield Node="textarea" primary="message"
+            value={message} placeholder="Your Message Here..."
+            onChange={(e) => setMessage(e.target.value)}
+          ></Textfield>
+          <Button variant="contact" type="submit" onClick={handleSubmit}>
             Submit
           </Button>
         </Card>
