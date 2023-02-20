@@ -15,15 +15,6 @@ function Header() {
         </Link>
       </div>
       <MenuItems color="header" />
-
-    <div className="bold">
-      <label className="switch">
-  <input type="checkbox"></input>
-  <span className="slider"></span>
-</label>
-</div>
-
-
       <div className="header__main">
         <div className="header__container">
           <a href="http://www.linkedin.com/in/operez0523-dev">
