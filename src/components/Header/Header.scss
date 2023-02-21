@@ -48,6 +48,13 @@
     height: 6rem;
     width: 6rem;
   }
+  &__burger {
+    color: $black;
+    position: absolute;
+    right: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
 }
 
 .switch{

@@ -1,18 +1,25 @@
 import "./MenuItems.scss";
 import Button from "../Button/Button"
 import { useNavigate } from "react-router-dom";
+import useSidebarStore from "../../stores/sidebarStore";
 
 function MenuItems(props) {
-  const { color = "primary" } = props;
+  const { visible, toggle } = useSidebarStore();
   const navigate = useNavigate();
+  const handleClick = (path) => {
+    navigate(path)
+    toggle(false);
+  };
+  const { color = "primary", location = "" } = props;
+  
   return (
-    <div className="menu">
+    <div className={`menu ${location ? "menu--" + location: ""}`}>
       <div className="container">
-        <Button onClick={() => navigate("/")} className={`items items--${color}`}>
+        <Button onClick={() => handleClick("/")} className={`items items--${color}`}>
           Home
         </Button>
         <Button
-          onClick={() => navigate("/about")}
+          onClick={() => handleClick("/about")}
           className={`items items--${color}`}
         >
           About
@@ -24,13 +31,13 @@ function MenuItems(props) {
           </label>
         </div>
         <Button
-          onClick={() => navigate("/projects")}
+          onClick={() => handleClick("/projects")}
           className={`items items--${color}`}
         >
           Projects
         </Button>
         <Button
-          onClick={() => navigate("/contact")}
+          onClick={() => handleClick("/contact")}
           className={`items items--${color}`}
         >
           Contact

@@ -5,10 +5,19 @@ import { SiGithub } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
+import useSidebarStore from "../../stores/sidebarStore";
+import { HiOutlineMenu } from "react-icons/hi";
 
 function Header() {
+  const { visible, toggle } = useSidebarStore();
+  const handleClick = () => {
+    toggle(true);
+  };
   return (
     <div className="header">
+       {!visible && (
+        <HiOutlineMenu className="header__burger" onClick={handleClick} />
+      )}
       <div className="header__center">
         <Link to="/">
           <img src={logo} alt="logo" className="header__logo" />
