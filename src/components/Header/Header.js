@@ -16,14 +16,14 @@ function Header() {
   return (
     <div className="header">
        {!visible && (
-        <HiOutlineMenu className="header__burger" onClick={handleClick} />
+        <HiOutlineMenu className="header__burger" color="ffffff" size={22} onClick={handleClick} />
       )}
       <div className="header__center">
         <Link to="/">
           <img src={logo} alt="logo" className="header__logo" />
         </Link>
       </div>
-      <MenuItems color="header" />
+      <MenuItems color="header" location="header" />
       <div className="header__main">
         <div className="header__container">
           <a target="_blank" href="http://www.linkedin.com/in/operez0523-dev">

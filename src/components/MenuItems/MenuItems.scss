@@ -29,6 +29,26 @@
       color: $palette-light-cream;
     }
   }
+  &--sidebar{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: $eggshell-white;
+    width: 10rem;
+    &:hover{
+      color: $eggshell-white;
+      background-color: $blue-op;
+      border: 2px solid $eggshell-white;
+      width: 10rem;
+    }
+    &:active{
+      color: $pink;
+      font-weight: 600;
+    }
+  }
 }
 
 .menu {
@@ -37,6 +57,8 @@
   &--sidebar{
     display: block;
     visibility: visible;
+    margin-top: 3rem;
+    margin-left: 1rem;
   }
   @media screen and (min-width: 960px) {
     display: block;

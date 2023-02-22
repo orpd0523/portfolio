@@ -10,17 +10,17 @@ function MenuItems(props) {
     navigate(path)
     toggle(false);
   };
-  const { color = "primary", location = "" } = props;
+  const { color = "primary", location = "primary" } = props;
   
   return (
     <div className={`menu ${location ? "menu--" + location: ""}`}>
       <div className="container">
-        <Button onClick={() => handleClick("/")} className={`items items--${color}`}>
+        <Button onClick={() => handleClick("/")} className={`items items--${location}`}>
           Home
         </Button>
         <Button
           onClick={() => handleClick("/about")}
-          className={`items items--${color}`}
+          className={`items items--${location}`}
         >
           About
         </Button>
@@ -32,13 +32,13 @@ function MenuItems(props) {
         </div>
         <Button
           onClick={() => handleClick("/projects")}
-          className={`items items--${color}`}
+          className={`items items--${location}`}
         >
           Projects
         </Button>
         <Button
           onClick={() => handleClick("/contact")}
-          className={`items items--${color}`}
+          className={`items items--${location}`}
         >
           Contact
         </Button>

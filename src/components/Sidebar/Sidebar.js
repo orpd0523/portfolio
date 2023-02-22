@@ -14,9 +14,10 @@ function Sidebar() {
     <div className={`sidebar${visibility}`}>
       <MdOutlineClose
         className="sidebar__close"
-        color="#0a0a0a"
+        color="FBFBFF"
         onClick={handleClick}
-      /><MenuItems location="sidebar"></MenuItems>
+      />
+        <MenuItems location="sidebar"></MenuItems>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 @use "../../styles/partials/colors.scss" as *;
 
 .sidebar{
-  background-color:$red;
+  background-color: $onyx;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -23,5 +23,9 @@
       justify-content: flex-end;
       top: 1rem;
       right: 1.25rem;
+      &:active{
+        font-size: 2.5rem;
+      }
   }
+
 }
