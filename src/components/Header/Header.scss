@@ -98,6 +98,10 @@
       padding: 0;
       width: 100%;
     }
+    &__burger{
+      display: none;
+      visibility: hidden;
+    }
   }
   .switch{
     display: block;

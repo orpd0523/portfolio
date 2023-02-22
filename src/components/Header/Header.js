@@ -26,12 +26,12 @@ function Header() {
       <MenuItems color="header" />
       <div className="header__main">
         <div className="header__container">
-          <a href="http://www.linkedin.com/in/operez0523-dev">
+          <a target="_blank" href="http://www.linkedin.com/in/operez0523-dev">
             <SiLinkedin className="header__icon" size={22} />
           </a>
         </div>
         <div className="header__container">
-          <a href="https://github.com/orpd0523">
+          <a target="_blank" href="https://github.com/orpd0523">
             <SiGithub className="header__icon" size={22} />
           </a>
         </div>
