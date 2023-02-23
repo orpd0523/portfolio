@@ -59,8 +59,8 @@ function ProjectsPage() {
             <p className="projects__project">
               <span className="projects__title">Project:</span> Capstone
             </p>
-            <p className="project__type">
-              <span className="project__title">Type:</span> Personal Project
+            <p className="projects__type">
+              <span className="projects__title">Type:</span> Personal Project
             </p>
             <p className="projects__response">
               <span className="projects__title">Responsive:</span> Mobile,
