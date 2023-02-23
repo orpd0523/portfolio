@@ -17,7 +17,7 @@ function AboutPage() {
           <h1 className="about__title">Olga Pérez</h1>
           <h2 className="about__title2">Software Developer</h2>
           <div className="about__rcontainer">
-            <a target="_blank"
+            <a rel="noreferrer" target="_blank"
               href="https://drive.google.com/file/d/1Fls2w_XZn_f-QG5UTbQ9ABXMw45x3cHv/view?usp=sharing"
               alt="resume"
               className="about__resume"
@@ -27,12 +27,12 @@ function AboutPage() {
           </div>
           <div className="about__boxicon">
             <div className="about__box">
-              <a target="_blank" href="http://www.linkedin.com/in/operez0523-dev">
+              <a rel="noreferrer" target="_blank" href="http://www.linkedin.com/in/operez0523-dev">
                 <SiLinkedin className="about__icon" size={22} />
               </a>
             </div>
             <div className="about__box">
-              <a target="_blank" href="https://github.com/orpd0523">
+              <a rel="noreferrer" target="_blank" href="https://github.com/orpd0523">
                 <SiGithub className="about__icon" size={22} />
               </a>
             </div>

@@ -9,14 +9,14 @@ function ProjectsPage() {
   return (
     <div className="projects">
       <div className="projects__box">
-        <a target="_blank" href="https://github.com/orpd0523" className="projects__link">
+        <a rel="noreferrer" target="_blank" href="https://github.com/orpd0523" className="projects__link">
           *Current Projects*
         </a>
       </div>
       <div className="projects__container">
         <Card color="holder">
           <Card color="projects">
-            <a target="_blank" href="https://eventoshyj.netlify.app/">
+            <a rel="noreferrer" target="_blank" href="https://eventoshyj.netlify.app/">
               <img
                 src={freelancing}
                 alt="freelancing"
@@ -51,7 +51,7 @@ function ProjectsPage() {
         </Card>
         <Card color="holder">
           <Card color="projects">
-            <a target="_blank" href="https://op-capstone.netlify.app/">
+            <a rel="noreferrer" target="_blank" href="https://op-capstone.netlify.app/">
               <img src={capstone} alt="capstone" className="projects__image" />
             </a>
           </Card>
@@ -82,7 +82,7 @@ function ProjectsPage() {
         </Card>
         <Card color="holder">
           <Card color="projects">
-            <a target="_blank" href="https://operez0523-fansite.netlify.app/">
+            <a rel="noreferrer" target="_blank" href="https://operez0523-fansite.netlify.app/">
               <img src={molotov} alt="molotov" className="projects__image" />
             </a>
           </Card>
@@ -114,7 +114,7 @@ function ProjectsPage() {
         <Card color="holder1">
           <div className="projects__hidden">
             <Card color="projects">
-              <a target="_blank" href="https://operez0523-travelsite.netlify.app/">
+              <a rel="noreferrer" target="_blank" href="https://operez0523-travelsite.netlify.app/">
                 <img
                   src={travelsite}
                   alt="travelsite"

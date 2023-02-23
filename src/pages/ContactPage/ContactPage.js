@@ -65,14 +65,14 @@ function ContactPage() {
               </div>
               <div className="contact__square">
                 <div className="hero__hold">
-                  <a target="_blank"
+                  <a rel="noreferrer" target="_blank"
                     href="https://www.linkedin.com/in/operez0523-dev"
                     rel="external"
                   >
                     <SiLinkedin className="hero__icon" size={22} />
                   </a>
                 </div>
-                <a target="_blank"
+                <a rel="noreferrer"  target="_blank"
                   href="https://www.linkedin.com/in/operez0523-dev"
                   rel="external"
                   className="contact__social"

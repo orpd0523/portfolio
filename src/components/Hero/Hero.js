@@ -11,12 +11,12 @@ function Hero() {
     <div className="hero">
       <div className="hero__socials">
         <div className="hero__hold">
-          <a target="_blank" href="http://www.linkedin.com/in/operez0523-dev">
+          <a rel="noreferrer" target="_blank" href="http://www.linkedin.com/in/operez0523-dev">
             <SiLinkedin className="hero__icon" size={22} />
           </a>
         </div>
         <div className="hero__hold">
-          <a target="_blank" href="https://github.com/orpd0523">
+          <a rel="noreferrer" target="_blank" href="https://github.com/orpd0523">
             <SiGithub className="hero__icon" size={22} />
           </a>
         </div>
