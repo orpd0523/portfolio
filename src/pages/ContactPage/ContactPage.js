@@ -29,7 +29,7 @@ function ContactPage() {
               <div className="contact__square">
                 <div className="hero__hold">
                   <Link to="/about">
-                    <BsPersonFill className="hero__icon" size={22} />
+                    <BsPersonFill className="hero__icon contact__color4" size={22} />
                   </Link>
                 </div>
                 <Link to="/about" style={{ textDecoration: "none" }}>
@@ -39,7 +39,7 @@ function ContactPage() {
               <div className="contact__square">
                 <div className="hero__hold">
                   <a href="tel:+1832-790-0105" rel="phone number">
-                    <AiFillPhone className="hero__icon" size={22} />
+                    <AiFillPhone className="contact__color5" size={22} />
                   </a>
                 </div>
                 <a
@@ -53,7 +53,7 @@ function ContactPage() {
               <div className="contact__square">
                 <div className="hero__hold">
                   <a href="mailto:orpd0523@gmail.com?subject=" rel="email">
-                    <MdEmail className="hero__icon" size={22} />
+                    <MdEmail className="hero__icon contact__color3" size={22} />
                   </a>
                 </div>
                 <a
@@ -70,7 +70,7 @@ function ContactPage() {
                     rel="noreferrer"
                     href="https://www.linkedin.com/in/operez0523-dev"
                   >
-                    <SiLinkedin className="hero__icon" size={22} />
+                    <SiLinkedin className="hero__icon contact__color1" size={21} />
                   </a>
                 </div>
                 <a

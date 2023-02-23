@@ -73,6 +73,66 @@
         color: $yellow;
       }
     }
+    &__color1 {
+      color: $pink;
+      &:hover {
+        color: $linkedin-blue;
+      }
+      &:active {
+        color: $yellow;
+      }
+      &:visited {
+        color: $white;
+      }
+    }
+    &__color2 {
+      color: $pink;
+      &:hover {
+        color: $black;
+      }
+      &:active {
+        color: $yellow;
+      }
+      &:visited {
+        color: $white;
+      }
+    }
+    &__color3 {
+      color: $pink;
+      &:hover {
+        color: $purple;
+      }
+      &:active {
+        color: $yellow;
+      }
+      &:visited {
+        color: $white;
+      }
+    }
+    &__color4 {
+      color: $pink;
+      &:hover {
+        color: $palette-dark-blue;
+      }
+      &:active {
+        color: $yellow;
+      }
+      &:visited {
+        color: $white;
+      }
+    }
+    &__color5 {
+      color: $pink;
+      &:hover {
+        color: $green;
+      }
+      &:active {
+        color: $yellow;
+      }
+      &:visited {
+        color: $white;
+      }
+    }
     &__title3 {
       color: $char-black;
       max-width: 6rem;
