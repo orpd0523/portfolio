@@ -12,17 +12,17 @@ function Hero() {
       <div className="hero__socials">
         <div className="hero__hold">
           <a  target="_blank" rel="noreferrer" href="http://www.linkedin.com/in/operez0523-dev">
-            <SiLinkedin className="hero__icon" size={22} />
+            <SiLinkedin className="hero__icon hero__color1" size={22} />
           </a>
         </div>
         <div className="hero__hold">
           <a  target="_blank" rel="noreferrer" href="https://github.com/orpd0523">
-            <SiGithub className="hero__icon" size={22} />
+            <SiGithub className="hero__icon hero__color2" size={22} />
           </a>
         </div>
         <div className="hero__hold">
           <a href="mailto:orpd0523@gmail.com?subject=">
-            <MdEmail className="hero__icon" size={22} />
+            <MdEmail className="hero__icon hero__color3" size={22} />
           </a>
         </div>
       </div>

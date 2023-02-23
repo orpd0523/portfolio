@@ -28,10 +28,34 @@
     display: inline-flex;
     flex-direction: row;
   }
-  &__icon {
+  &__color1 {
     color: $white;
     &:hover {
-      color: $palette-dark-blue;
+      color: $linkedin-blue;
+    }
+    &:active {
+      color: $yellow;
+    }
+    &:visited {
+      color: $white;
+    }
+  }
+  &__color2 {
+    color: $white;
+    &:hover {
+      color: $black;
+    }
+    &:active {
+      color: $yellow;
+    }
+    &:visited {
+      color: $white;
+    }
+  }
+  &__color3 {
+    color: $white;
+    &:hover {
+      color: $purple;
     }
     &:active {
       color: $yellow;
@@ -157,7 +181,7 @@
  }
  
  input:checked + .slider {
-  background-color: #000000;
+  background-color: $black;
   border: 1px solid transparent;
  }
  

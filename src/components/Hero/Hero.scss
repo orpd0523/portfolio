@@ -85,18 +85,54 @@
       gap: 3rem;
       padding: 1.25rem;
     }
-    &__icon {
+    // &__icon {
+    //   color: $pink;
+    //   height: 1.75rem;
+    //   width: auto;
+    //   &:hover {
+    //     color: $yellow;
+    //   }
+    //   &:active {
+    //     color: $yellow;
+    //   }
+    //   &:visited {
+    //     color: $pink;
+    //   }
+    // }
+    &__color1 {
       color: $pink;
-      height: 1.75rem;
-      width: auto;
       &:hover {
-        color: $yellow;
+        color: $linkedin-blue;
       }
       &:active {
         color: $yellow;
       }
       &:visited {
-        color: $pink;
+        color: $white;
+      }
+    }
+    &__color2 {
+      color: $pink;
+      &:hover {
+        color: $black;
+      }
+      &:active {
+        color: $yellow;
+      }
+      &:visited {
+        color: $white;
+      }
+    }
+    &__color3 {
+      color: $pink;
+      &:hover {
+        color: $purple;
+      }
+      &:active {
+        color: $yellow;
+      }
+      &:visited {
+        color: $white;
       }
     }
     &__button {

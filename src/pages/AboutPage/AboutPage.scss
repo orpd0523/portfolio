@@ -113,18 +113,54 @@
       margin-top: 4rem;
       margin-bottom: 0.5rem;
     }
-    &__icon {
-      height: 2rem;
-      width: auto;
+    // &__icon {
+    //   height: 2rem;
+    //   width: auto;
+    //   color: $char-black;
+    //   &:hover {
+    //     color: $pink;
+    //   }
+    //   &:active {
+    //     color: $white;
+    //   }
+    //   &:visited {
+    //     color: $char-black;
+    //   }
+    // }
+    &__color1 {
       color: $char-black;
       &:hover {
-        color: $pink;
+        color: $linkedin-blue;
       }
       &:active {
-        color: $white;
+        color: $yellow;
       }
       &:visited {
-        color: $char-black;
+        color: $white;
+      }
+    }
+    &__color2 {
+      color: $char-black;
+      &:hover {
+        color: $white;
+      }
+      &:active {
+        color: $yellow;
+      }
+      &:visited {
+        color: $white;
+      }
+    }
+    &__color3 {
+      color: $char-black;
+      &:hover {
+        color: $purple;
+      }
+      &:active {
+        color: $yellow;
+      }
+      &:visited {
+        color: $white;
       }
     }
     &__boxicon {

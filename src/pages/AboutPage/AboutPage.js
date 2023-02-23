@@ -28,17 +28,17 @@ function AboutPage() {
           <div className="about__boxicon">
             <div className="about__box">
               <a target="_blank" rel="noreferrer"  href="http://www.linkedin.com/in/operez0523-dev">
-                <SiLinkedin className="about__icon" size={22} />
+                <SiLinkedin className="about__icon about__color1" size={22} />
               </a>
             </div>
             <div className="about__box">
               <a  target="_blank" rel="noreferrer" href="https://github.com/orpd0523">
-                <SiGithub className="about__icon" size={22} />
+                <SiGithub className="about__icon about__color2" size={22} />
               </a>
             </div>
             <div className="about__box">
               <a href="mailto:orpd0523@gmail.com?subject=">
-                <MdEmail className="about__icon" size={22} />
+                <MdEmail className="about__icon about__color3" size={22} />
               </a>
             </div>
           </div>
