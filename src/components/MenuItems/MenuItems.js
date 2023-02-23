@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 import useSidebarStore from "../../stores/sidebarStore";
 
 function MenuItems(props) {
-  const { visible, toggle } = useSidebarStore();
+  const { toggle } = useSidebarStore();
   const navigate = useNavigate();
   const handleClick = (path) => {
     navigate(path)
     toggle(false);
   };
-  const { color = "primary", location = "primary" } = props;
+  const { location = "primary" } = props;
   
   return (
     <div className={`menu ${location ? "menu--" + location: ""}`}>
