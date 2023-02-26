@@ -4,6 +4,7 @@ import molotov from "../../assets/molotov.png";
 import capstone from "../../assets/capstone.png";
 import travelsite from "../../assets/travelsite.png";
 import freelancing from "../../assets/freelancing.png";
+import ditto from "../../assets/ditto.png";
 
 function ProjectsPage() {
   return (
@@ -14,6 +15,40 @@ function ProjectsPage() {
         </a>
       </div>
       <div className="projects__container">
+        <Card color="holder">
+          <Card color="projects">
+            <a  target="_blank" rel="noreferrer"  href="https://orpd0523-ditto-matching.netlify.app/">
+              <img
+                src={ditto}
+                alt="ditto"
+                className="projects__image"
+              />
+            </a>
+          </Card>
+          <div className="projects__description">
+            <p className="projects__project">
+              <span className="projects__title">Project:</span> Ditto Match
+            </p>
+            <p className="project__type">
+              <span className="projects__title">Type:</span> Personal Project
+            </p>
+            <p className="projects__response">
+              <span className="projects__title">Responsive:</span> Mobile,
+              Tablet, Desktop
+            </p>
+            <p className="projects__language">
+              <span className="projects__title">Languages:</span> HTML5, CSS,
+              JavaScript
+            </p>
+            <p className="projects__frameworks">
+              <span className="projects__title">Frameworks/Libraries:</span> SASS
+            </p>
+            <p className="projects__technology">
+              <span className="projects__title">Technologies:</span> GitHub,
+              Netlify
+            </p>
+          </div>
+        </Card>
         <Card color="holder">
           <Card color="projects">
             <a  target="_blank" rel="noreferrer"  href="https://eventoshyj.netlify.app/">
@@ -40,8 +75,8 @@ function ProjectsPage() {
               JavaScript
             </p>
             <p className="projects__frameworks">
-              <span className="projects__title">Frameworks/Libraries:</span>{" "}
-              React, Zustand, react-router-dom, React Icons
+              <span className="projects__title">Frameworks/Libraries:</span>
+              React, Zustand, react-router-dom, React Icons, SASS
             </p>
             <p className="projects__technology">
               <span className="projects__title">Technologies:</span> GitHub,
@@ -71,7 +106,7 @@ function ProjectsPage() {
               JavaScript
             </p>
             <p className="projects__frameworks">
-              <span className="projects__title">Frameworks/Libraries:</span>{" "}
+              <span className="projects__title">Frameworks/Libraries:</span>
               React, Zustand, SASS, react-router-dom, React Icons
             </p>
             <p className="projects__technology">
@@ -114,7 +149,7 @@ function ProjectsPage() {
         <Card color="holder1">
           <div className="projects__hidden">
             <Card color="projects">
-              <a  target="_blank" rel="noreferrer"  href="https://operez0523-travelsite.netlify.app/">
+              <a  target="_blank" rel="noreferrer" href="https://operez0523-travelsite.netlify.app/">
                 <img
                   src={travelsite}
                   alt="travelsite"

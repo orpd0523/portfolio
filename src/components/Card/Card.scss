@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 362px;
+    max-width: 17rem;
   }
   &--holder1{
     display: none;
@@ -57,7 +57,7 @@
   @media screen and (min-width: 768px) {
     &--holder{
       flex-direction: row;
-      height: 664px;
+      height: 30rem;
       min-width: 666px;
     }
     &--contact1{
