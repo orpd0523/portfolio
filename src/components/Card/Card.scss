@@ -25,8 +25,10 @@
   &--projects {
     color: $palette-dark-blue;
     max-width: fit-content;
+    margin: .5rem;
+
   }
-  &--holder{
+  &--holder {
     background-color: $raisin-black;
     color: $white;
     border-radius: 0;
@@ -34,33 +36,30 @@
     flex-direction: column;
     align-items: center;
     max-width: 17rem;
+    padding-bottom: .5rem;
   }
-  &--holder1{
+  &--contact2 {
     display: none;
     visibility: hidden;
   }
-  &--contact2{
-    display: none;
-    visibility: hidden;
-  }
-  &--contact1{
+  &--contact1 {
     height: 30rem;
     width: 18rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-inline:auto;
+    margin-inline: auto;
     color: $eggshell-white;
     background-color: $oxford-blue;
     border-radius: 0;
   }
   @media screen and (min-width: 768px) {
-    &--holder{
-      flex-direction: row;
-      height: 30rem;
-      min-width: 666px;
+    &--holder {
+      // flex-direction: row;
+      // height: 30rem;
+      // min-width: 666px;
     }
-    &--contact1{
+    &--contact1 {
       height: 30rem;
       width: 35rem;
     }
@@ -80,12 +79,9 @@
       height: 10rem;
       position: relative;
     }
-    &--holder{
-      max-height: 30rem;
-      max-width: 46.875rem;
-      margin-inline: auto;
+    &--holder {
     }
-    &--contact2{
+    &--contact2 {
       display: block;
       visibility: visible;
       position: absolute;
@@ -97,7 +93,7 @@
       background-color: $light-yellow;
       color: $char-black;
     }
-    &--contact1{
+    &--contact1 {
       position: relative;
       left: 3rem;
       height: 34rem;
@@ -105,28 +101,5 @@
       padding-left: 15rem;
       margin-top: 5rem;
     }
-  }
-  @media screen and (min-width: 1100px){
-    &--holder{
-      margin-inline: auto;
-      max-height: 30rem;
-      min-width: 50rem;
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    &--projects {
-      color: $palette-dark-blue;
-      max-height: 20.75rem;
-    }
-      &--holder1{
-        background-color: $raisin-black;
-        color: $white;
-        border-radius: 0;
-        display: block;
-        visibility: visible;
-        max-height: 30rem;
-        min-width: 50rem;
-      }
-    
   }
 }

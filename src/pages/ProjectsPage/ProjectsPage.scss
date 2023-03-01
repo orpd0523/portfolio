@@ -5,10 +5,10 @@
     background-color: $red;
     border-radius: 1rem;
     margin-inline: auto;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    width: 12rem;
-    height: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    width: 10rem;
+    height: 3rem;
     &:hover {
       background-color: $char-black;
     }
@@ -16,11 +16,28 @@
       background-color: $yellow;
     }
   }
+  &__icon {
+    justify-content: center;
+    color: $white;
+    &:hover {
+      color: $black;
+    }
+  }
+  &__project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+  }
   &__link {
+    padding-top: 0.5rem;
+  }
+  &__top {
     color: $white;
     display: flex;
     justify-content: center;
-    padding-top: 1.25rem;
+    padding-top: 0.9rem;
     height: 100%;
     width: 100%;
     text-decoration: none;
@@ -46,64 +63,28 @@
     display: flex;
     flex-direction: column;
     margin-inline: auto;
-    margin-left: 3rem;
-    margin-right: 2rem;
-    padding-bottom: 1rem;
-    max-width: 362px;
+    margin: 0;
   }
   &__title {
     font-weight: 600;
-    text-decoration: underline;
-    color: $ash-gray;
+    color: $white;
+    justify-content: center;
   }
-  @media screen and (min-width: 768px) {
-    &__box {
-      width: 16rem;
-      margin-top: 4rem;
-    }
+  @media screen and (min-width: 490px) {
+    margin-inline: auto;
     &__container {
-      flex-direction: column;
-      justify-content: space-evenly;
-      margin-top: 2rem;
-    }
-  }
-  @media screen and (min-width: 960px) {
-    &__box {
-      width: 25rem;
-    }
-    &__image {
-      height: 20rem;
-      width: 20rem;
-    }
-    &__container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-left: 6rem;
-      max-width: 70rem;
       margin-inline: auto;
-      align-self: center;
-      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 700px;
     }
+  }
+  @media screen and (min-width: 720px) {
+      &__container{
+      }
   }
   @media screen and (min-width: 1280px) {
-    &__hidden {
-      display: block;
-      visibility: visible;
-      display: flex;
-      min-height: 30rem;
-      min-width: 50rem;
-      margin-top: 3rem;
-    }
-    &__description1 {
-      display: flex;
-      flex-direction: column;
-      margin-inline: auto;
-      margin-left: 4rem;
-      margin-right: 2rem;
-      padding-bottom: 1rem;
-      max-width: 362px;
-      margin-top: 2rem;
-    }
   }
 }

@@ -5,53 +5,53 @@ import capstone from "../../assets/capstone.png";
 import travelsite from "../../assets/travelsite.png";
 import freelancing from "../../assets/freelancing.png";
 import ditto from "../../assets/ditto.png";
+import { SiGithub } from "react-icons/si";
 
 function ProjectsPage() {
   return (
     <div className="projects">
       <div className="projects__box">
-        <a rel="noreferrer" target="_blank" href="https://github.com/orpd0523" className="projects__link">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://github.com/orpd0523"
+          className="projects__top"
+        >
           *Current Projects*
         </a>
       </div>
       <div className="projects__container">
         <Card color="holder">
           <Card color="projects">
-            <a  target="_blank" rel="noreferrer"  href="https://orpd0523-ditto-matching.netlify.app/">
-              <img
-                src={ditto}
-                alt="ditto"
-                className="projects__image"
-              />
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://orpd0523-ditto-matching.netlify.app/"
+            >
+              <img src={ditto} alt="ditto" className="projects__image" />
             </a>
           </Card>
           <div className="projects__description">
             <p className="projects__project">
-              <span className="projects__title">Project:</span> Ditto Match
-            </p>
-            <p className="project__type">
-              <span className="projects__title">Type:</span> Personal Project
-            </p>
-            <p className="projects__response">
-              <span className="projects__title">Responsive:</span> Mobile,
-              Tablet, Desktop
-            </p>
-            <p className="projects__language">
-              <span className="projects__title">Languages:</span> HTML5, CSS,
-              JavaScript
-            </p>
-            <p className="projects__frameworks">
-              <span className="projects__title">Frameworks/Libraries:</span> SASS
-            </p>
-            <p className="projects__technology">
-              <span className="projects__title">Technologies:</span> GitHub,
-              Netlify
+              <span className="projects__title">Ditto Match</span>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/orpd0523"
+                className="projects__link"
+              >
+                <SiGithub className="projects__icon" size={30} />
+              </a>
             </p>
           </div>
         </Card>
         <Card color="holder">
           <Card color="projects">
-            <a  target="_blank" rel="noreferrer"  href="https://eventoshyj.netlify.app/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://eventoshyj.netlify.app/"
+            >
               <img
                 src={freelancing}
                 alt="freelancing"
@@ -61,120 +61,67 @@ function ProjectsPage() {
           </Card>
           <div className="projects__description">
             <p className="projects__project">
-              <span className="projects__title">Project:</span> EventosHyJ
-            </p>
-            <p className="project__type">
-              <span className="projects__title">Type:</span> Freelancing
-            </p>
-            <p className="projects__response">
-              <span className="projects__title">Responsive:</span> Mobile,
-              Tablet, Desktop
-            </p>
-            <p className="projects__language">
-              <span className="projects__title">Languages:</span> HTML5, CSS,
-              JavaScript
-            </p>
-            <p className="projects__frameworks">
-              <span className="projects__title">Frameworks/Libraries:</span>
-              React, Zustand, react-router-dom, React Icons, SASS
-            </p>
-            <p className="projects__technology">
-              <span className="projects__title">Technologies:</span> GitHub,
-              Netlify
+              <span className="projects__title">EventosHyJ</span>
+
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/orpd0523"
+                className="projects__link"
+              >
+                <SiGithub className="projects__icon" size={30} />
+              </a>
             </p>
           </div>
         </Card>
         <Card color="holder">
           <Card color="projects">
-            <a target="_blank" rel="noreferrer"  href="https://op-capstone.netlify.app/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://op-capstone.netlify.app/"
+            >
               <img src={capstone} alt="capstone" className="projects__image" />
             </a>
           </Card>
           <div className="projects__description">
             <p className="projects__project">
-              <span className="projects__title">Project:</span> Capstone
-            </p>
-            <p className="projects__type">
-              <span className="projects__title">Type:</span> Personal Project
-            </p>
-            <p className="projects__response">
-              <span className="projects__title">Responsive:</span> Mobile,
-              Tablet, Desktop
-            </p>
-            <p className="projects__language">
-              <span className="projects__title">Languages:</span> HTML5, CSS,
-              JavaScript
-            </p>
-            <p className="projects__frameworks">
-              <span className="projects__title">Frameworks/Libraries:</span>
-              React, Zustand, SASS, react-router-dom, React Icons
-            </p>
-            <p className="projects__technology">
-              <span className="projects__title">Technologies:</span> GitHub,
-              Netlify, MangoDB
+              <span className="projects__title">Capstone</span>
+
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/orpd0523"
+                className="projects__link"
+              >
+                <SiGithub className="projects__icon" size={30} />
+              </a>
             </p>
           </div>
         </Card>
         <Card color="holder">
           <Card color="projects">
-            <a  target="_blank" rel="noreferrer"  href="https://operez0523-fansite.netlify.app/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://operez0523-fansite.netlify.app/"
+            >
               <img src={molotov} alt="molotov" className="projects__image" />
             </a>
           </Card>
           <div className="projects__description">
             <p className="projects__project">
-              <span className="projects__title">Project:</span> Fansite
-            </p>
-            <p className="project__type">
-              <span className="projects__title">Type:</span> Personal Project
-            </p>
-            <p className="projects__response">
-              <span className="projects__title">Responsive:</span> Mobile,
-              Tablet, Desktop
-            </p>
-            <p className="projects__language">
-              <span className="projects__title">Languages:</span> HTML5, CSS,
-              JavaScript
-            </p>
-            <p className="projects__frameworks">
-              <span className="projects__title">Frameworks/Libraries:</span>{" "}
-              SASS
-            </p>
-            <p className="projects__technology">
-              <span className="projects__title">Technologies:</span> GitHub,
-              Netlify, MongoDB
-            </p>
-          </div>
-        </Card>
-        <Card color="holder1">
-          <div className="projects__hidden">
-            <Card color="projects">
-              <a  target="_blank" rel="noreferrer" href="https://operez0523-travelsite.netlify.app/">
-                <img
-                  src={travelsite}
-                  alt="travelsite"
-                  className="projects__image"
-                />
+              <span className="projects__title">Fansite</span>
+
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/orpd0523"
+                className="projects__link"
+              >
+                <SiGithub className="projects__icon" size={30} />
               </a>
-            </Card>
-            <div className="projects__description1">
-              <p className="projects__project">
-                <span className="projects__title">Project:</span> Travel Site
-              </p>
-              <p className="project__type">
-                <span className="projects__title">Type:</span> Personal Project
-              </p>
-              <p className="projects__response">
-                <span className="projects__title">Responsive:</span> Desktop
-              </p>
-              <p className="projects__language">
-                <span className="projects__title">Languages:</span> HTML5, CSS
-              </p>
-              <p className="projects__technology">
-                <span className="projects__title">Technologies:</span> GitHub,
-                Netlify
-              </p>
-            </div>
+            </p>
           </div>
         </Card>
       </div>
