@@ -2,7 +2,6 @@ import "./ProjectsPage.scss";
 import Card from "../../components/Card/Card";
 import molotov from "../../assets/molotov.png";
 import capstone from "../../assets/capstone.png";
-import travelsite from "../../assets/travelsite.png";
 import freelancing from "../../assets/freelancing.png";
 import ditto from "../../assets/ditto.png";
 import { SiGithub } from "react-icons/si";
