@@ -36,7 +36,7 @@ function ProjectsPage() {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://github.com/orpd0523"
+                href="https://github.com/orpd0523/ditto-me-this"
                 className="projects__link"
               >
                 <SiGithub className="projects__icon" size={30} />
@@ -65,7 +65,7 @@ function ProjectsPage() {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://github.com/orpd0523"
+                href="https://github.com/orpd0523/EventosHyJ"
                 className="projects__link"
               >
                 <SiGithub className="projects__icon" size={30} />
@@ -90,7 +90,7 @@ function ProjectsPage() {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://github.com/orpd0523"
+                href="https://github.com/orpd0523/olga-perez-capstone"
                 className="projects__link"
               >
                 <SiGithub className="projects__icon" size={30} />
@@ -115,7 +115,7 @@ function ProjectsPage() {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="https://github.com/orpd0523"
+                href="https://github.com/orpd0523/Fansite"
                 className="projects__link"
               >
                 <SiGithub className="projects__icon" size={30} />

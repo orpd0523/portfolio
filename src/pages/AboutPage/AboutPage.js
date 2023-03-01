@@ -18,7 +18,7 @@ function AboutPage() {
           <h2 className="about__title2">Software Developer</h2>
           <div className="about__rcontainer">
             <a target="_blank" rel="noreferrer" 
-              href="https://drive.google.com/file/d/1Fls2w_XZn_f-QG5UTbQ9ABXMw45x3cHv/view?usp=sharing"
+              href="https://drive.google.com/file/d/16nlGLz_8MHgZTduB4xFwEKCD83TlsYOB/view?usp=sharing"
               alt="resume"
               className="about__resume"
             >
