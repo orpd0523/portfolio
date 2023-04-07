@@ -3,7 +3,6 @@ import MenuItems from "../MenuItems/MenuItems";
 import { SiLinkedin } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
 import useSidebarStore from "../../stores/sidebarStore";
 import { HiOutlineMenu } from "react-icons/hi";
 
