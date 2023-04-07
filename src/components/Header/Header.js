@@ -3,7 +3,6 @@ import MenuItems from "../MenuItems/MenuItems";
 import { SiLinkedin } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
-import logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
 import useSidebarStore from "../../stores/sidebarStore";
 import { HiOutlineMenu } from "react-icons/hi";
@@ -19,9 +18,6 @@ function Header() {
         <HiOutlineMenu className="header__burger" color="ffffff" size={22} onClick={handleClick} />
       )}
       <div className="header__center">
-        <Link to="/">
-          <img src={logo} alt="logo" className="header__logo" />
-        </Link>
       </div>
       <MenuItems color="header" location="header" />
       <div className="header__main">

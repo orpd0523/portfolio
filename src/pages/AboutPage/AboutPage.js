@@ -5,8 +5,11 @@ import { SiLinkedin } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import useDarkModeStore from "../../stores/darkModeStore.js";
 
 function AboutPage() {
+  const { dark } = useDarkModeStore();
+  const black = dark ? "" : "dark-mode";
   return (
     <div className="about">
       <div className="about__container">
@@ -17,7 +20,9 @@ function AboutPage() {
           <h1 className="about__title">Olga Pérez</h1>
           <h2 className="about__title2">Software Developer</h2>
           <div className="about__rcontainer">
-            <a target="_blank" rel="noreferrer" 
+            <a
+              target="_blank"
+              rel="noreferrer"
               href="https://drive.google.com/file/d/16nlGLz_8MHgZTduB4xFwEKCD83TlsYOB/view?usp=sharing"
               alt="resume"
               className="about__resume"
@@ -27,12 +32,20 @@ function AboutPage() {
           </div>
           <div className="about__boxicon">
             <div className="about__box">
-              <a target="_blank" rel="noreferrer"  href="http://www.linkedin.com/in/operez0523-dev">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="http://www.linkedin.com/in/operez0523-dev"
+              >
                 <SiLinkedin className="about__icon about__color1" size={22} />
               </a>
             </div>
             <div className="about__box">
-              <a  target="_blank" rel="noreferrer" href="https://github.com/orpd0523">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/orpd0523"
+              >
                 <SiGithub className="about__icon about__color2" size={22} />
               </a>
             </div>
@@ -47,8 +60,7 @@ function AboutPage() {
           <div className="about__tcontainer">
             <h3 className="about__ptitle">This Is Who I Am:</h3>
           </div>
-          <div className="about__pcontainer">
-            <p className="about__paragraph">
+            <p className={`about__paragraph ${black}`}>
               Hi, I'm Olga, a recent graduate of a software development
               bootcamp. I completed a 12-week program that taught me the basics
               of web development, including HTML, CSS, JavaScript, and several
@@ -56,7 +68,7 @@ function AboutPage() {
               program, I worked on various projects and collaborated with other
               students on group assignments.
             </p>
-            <p className="about__paragraph">
+            <p className={`about__paragraph ${black}`}>
               Since graduation, I've been applying for entry-level software
               development positions, and I'm thrilled to have received a few
               interview requests. To continue improving my skills, I've been
@@ -64,7 +76,7 @@ function AboutPage() {
               projects on GitHub. My long-term goal is to become a full-stack
               developer, and I'm excited about the journey ahead.
             </p>
-          </div>
+          
           <div className="about__button">
             <Link to="/contact">
               <Button variant="about">Contact Me</Button>
@@ -72,7 +84,7 @@ function AboutPage() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 }
 

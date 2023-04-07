@@ -5,11 +5,15 @@ import { SiGithub } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
+import useDarkModeStore from "../../stores/darkModeStore.js";
+
 
 function Hero() {
+  const { dark } = useDarkModeStore();
+  const black = dark ? "" : "dark-mode";
   return (
     <div className="hero">
-      <div className="hero__socials">
+      <div className={`hero__socials ${black}`} >
         <div className="hero__hold">
           <a  target="_blank" rel="noreferrer" href="http://www.linkedin.com/in/operez0523-dev">
             <SiLinkedin className="hero__icon hero__color1" size={22} />

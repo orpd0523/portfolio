@@ -3,3 +3,13 @@
 body {
   background-color: $palette-light-cream;
 }
+
+.app{
+  min-height: 100vh;
+  height: 100%;
+}
+
+.dark-mode {
+  background-color: $dark-mode;
+  color: white;
+}

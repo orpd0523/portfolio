@@ -9,8 +9,11 @@ import { BsPersonFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
+import useDarkModeStore from "../../stores/darkModeStore.js";
 
 function ContactPage() {
+  const { dark } = useDarkModeStore();
+  const black = dark ? "" : "dark-mode";
   const [message, setMessage] = useState("");
   const handleSubmit = () => {
     const URL = process.env.REACT_APP_CONTACT_URL;
@@ -21,7 +24,7 @@ function ContactPage() {
   return (
     <div className="contact">
       <div className="contact__container">
-        <h1 className="contact__outside">Let's Work Together!</h1>
+        <h1 className={`contact__outside ${black}`}>Let's Work Together!</h1>
         <Card color="contact1">
           <div className="contact__container">
             <Card color="contact2">

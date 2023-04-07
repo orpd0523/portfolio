@@ -2,16 +2,20 @@ import "./MenuItems.scss";
 import Button from "../Button/Button"
 import { useNavigate } from "react-router-dom";
 import useSidebarStore from "../../stores/sidebarStore";
+import useDarkModeStore from "../../stores/darkModeStore";
 
 function MenuItems(props) {
   const { toggle } = useSidebarStore();
+  const { toggleDarkMode } = useDarkModeStore();
+  const handleDarkMode = () => {
+    toggleDarkMode((curr) => !curr);
+  };
   const navigate = useNavigate();
   const handleClick = (path) => {
     navigate(path)
     toggle(false);
   };
   const { location = "primary" } = props;
-  
   return (
     <div className={`menu ${location ? "menu--" + location: ""}`}>
       <div className="container">
@@ -24,12 +28,14 @@ function MenuItems(props) {
         >
           About
         </Button>
+
         <div className="bold">
           <label className="switch">
-            <input type="checkbox"></input>
+            <input type="checkbox" onClick={handleDarkMode}></input>
             <span className="slider"></span>
           </label>
         </div>
+
         <Button
           onClick={() => handleClick("/projects")}
           className={`items items--${location}`}

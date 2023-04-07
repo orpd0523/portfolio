@@ -26,7 +26,6 @@
     color: $palette-dark-blue;
     max-width: fit-content;
     margin: .5rem;
-
   }
   &--holder {
     background-color: $raisin-black;
@@ -54,11 +53,6 @@
     border-radius: 0;
   }
   @media screen and (min-width: 768px) {
-    &--holder {
-      // flex-direction: row;
-      // height: 30rem;
-      // min-width: 666px;
-    }
     &--contact1 {
       height: 30rem;
       width: 35rem;
